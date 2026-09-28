@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contato | Lojinha do Oliver — Fale com a gente</title>
+
+  <link rel="icon" type="image/png" href="img/favicon.png"> 
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="topo">
+    <div class="container">
+      <a href="index.html" class="marca">
+        <img src="./img/cdlogo.png" alt="Imagem de um CD" width="30px">
+        Lojinha do Oliver
+      </a>
+
+      <nav class="nav-principal" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html" aria-current="page">Contato</a>
+      </nav>
+
+      <div class="acoes-topo">
+        <a href="catalogo.html" class="botao-carrinho" aria-label="Ver carrinho de compras">
+          🛒 <span class="texto-carrinho">Carrinho</span>
+          <span class="contador-carrinho">0</span>
+        </a>
+        <button class="botao-menu-mobile" aria-label="Abrir menu de navegação" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="secao">
+      <div class="container">
+        <span class="etiqueta">Fale com a gente</span>
+        <h1 style="margin-block:10px 22px;">Alguma dúvida sobre seu pedido ou sugestão de CD?</h1>
+        <p class="lead" style="margin-bottom: 48px;">Preencha o formulário abaixo. Respondemos em até 2 dias úteis no e-mail informado.</p>
+
+        <div class="grade-contato">
+<!--Formulário-->
+          <form id="form-contato" novalidate>
+            <div id="confirmacao-contato" class="confirmacao-envio" role="alert">
+              Mensagem enviada com sucesso! Em breve alguém da nossa equipe responde por e-mail.
+            </div>
+
+            <div class="campo">
+              <label for="contato-nome">Nome completo</label>
+              <input type="text" id="contato-nome" name="nome" autocomplete="name" required minlength="3">
+              <p class="mensagem-erro">Informe seu nome completo (mínimo 3 letras).</p>
+            </div>
+
+            <div class="campo">
+              <label for="contato-email">E-mail</label>
+              <input type="email" id="contato-email" name="email" autocomplete="email" required>
+              <p class="mensagem-erro">Informe um e-mail válido, como nome@exemplo.com.</p>
+            </div>
+
+            <div class="campo">
+              <label for="contato-assunto">Assunto</label>
+              <select id="contato-assunto" name="assunto" required>
+                <option value="">Selecione uma opção</option>
+                <option value="pedido">Dúvida sobre um pedido</option>
+                <option value="troca">Troca ou devolução</option>
+                <option value="sugestao">Sugestão de CD</option>
+                <option value="outro">Outro assunto</option>
+              </select>
+              <p class="mensagem-erro">Selecione um assunto para sua mensagem.</p>
+            </div>
+
+            <div class="campo">
+              <label for="contato-mensagem">Mensagem</label>
+              <textarea id="contato-mensagem" name="mensagem" required minlength="10"></textarea>
+              <p class="mensagem-erro">Sua mensagem precisa ter pelo menos 10 caracteres.</p>
+            </div>
+
+            <button type="submit" class="botao botao--primario botao--bloco">Enviar mensagem</button>
+          </form>
+
+<!--Informações da lojinha-->
+          <div class="info-loja revelar">
+            <h3>Atendimento</h3>
+            <p>Segunda a sexta, das 9h às 18h (horário de Brasília).</p>
+
+            <h3>E-mail</h3>
+            <p>contato@lojinhadooliver.com.br</p>
+
+            <h3>Telefone / WhatsApp</h3>
+            <p>(42) 99999-0000</p>
+
+            <h3>Endereço</h3>
+            <p>Telêmaco Borba, Paraná, Brasil<br>Retirada somente com agendamento prévio.</p>
+
+            <h3>Redes sociais</h3>
+            <p>@lojinhadooliver em todas as plataformas</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <div class="grade-rodape">
+        <div>
+          <a href="index.html" class="marca" style="margin-bottom:14px;">
+            <img src="./img/cdlogo.png" alt="Imagem de um CD" width="30px">
+            Lojinha do Oliver
+          </a>
+          <p class="rodape-fontes">Loja virtual, criada como atividade MAPA da disciplina de Front-End.</p>
+        </div>
+        <div>
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Atendimento</h4>
+          <ul>
+            <li><a href="contato.html">Fale conosco</a></li>
+            <li><a href="sobre.html#faq">Perguntas frequentes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Onde estamos</h4>
+          <p>Telêmaco Borba, PR, Brasil</p>
+          <p>contato@lojinhadooliver.com.br</p>
+        </div>
+      </div>
+      <div class="rodape-base">
+        <span>© 2026 Lojinha do Oliver. Atividade MAPA para a disciplina de Front-End.</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+
+  <script src="./main.js"></script>
+</body>
+</html>

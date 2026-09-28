@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Catálogo de CDs| Lojinha do Oliver</title>
+  
+  <link rel="icon" type="image/png" href="img/favicon.png"> 
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <header class="topo">
+    <div class="container">
+      <a href="index.html" class="marca">
+        <img src="./img/cdlogo.png" alt="Imagem de um CD" width="30px">
+        Lojinha do Oliver
+      </a>
+
+      <nav class="nav-principal" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="catalogo.html" aria-current="page">Catálogo</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+
+      <div class="acoes-topo">
+        <a href="#carrinho-info" class="botao-carrinho" aria-label="Ver carrinho de compras">
+          🛒 <span class="texto-carrinho">Carrinho</span>
+          <span class="contador-carrinho">0</span>
+        </a>
+        <button class="botao-menu-mobile" aria-label="Abrir menu de navegação" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="secao" style="padding-block: 56px 0;">
+      <div class="container">
+        <span class="etiqueta">Catálogo completo</span>
+        <h1 style="margin-block: 10px 26px;">Escolha por gênero, leve pra casa</h1>
+
+        <div class="chips" role="group" aria-label="Filtrar CDs por gênero">
+          <button class="chip" aria-pressed="true" data-filtro="todos">Todos</button>
+          <button class="chip" aria-pressed="false" data-filtro="rock">Rock Nacional</button>
+          <button class="chip" aria-pressed="false" data-filtro="mpb">MPB</button>
+          <button class="chip" aria-pressed="false" data-filtro="samba">Samba</button>
+          <button class="chip" aria-pressed="false" data-filtro="jazz">Jazz</button>
+          <button class="chip" aria-pressed="false" data-filtro="eletronica">Eletrônica</button>
+          <button class="chip" aria-pressed="false" data-filtro="indie">Indie</button>
+        </div>
+        <p id="contagem-resultados" class="etiqueta" style="margin-top:16px; color: var(--texto-muted-claro);">12 CDs encontrados</p>
+      </div>
+    </section>
+
+    <section class="secao" style="padding-top: 24px;">
+      <div class="container">
+        <div class="grade-produtos" id="carrinho-info">
+          
+          <article class="cartao-produto revelar" data-genero="indie" data-id="p6" data-nome="Lust For Life" data-preco="134.90">
+            <div class="capa-produto capa--indie">
+              <img src="./img/lana.jpg">
+            </div>
+                  <div class="info-produto">
+                    <span class="etiqueta genero">Indie</span>
+                    <h3>Lust For Life</h3>
+                    <p class="artista">Lana Del Rey</p>
+                      <div class="linha-preco"><span class="preco">R$ 134,90</span><button class="botao-add" aria-label="Adicionar Lust For Life ao carrinho">+</button></div>
+                  </div>
+          </article>
+
+          <article class="cartao-produto revelar" data-genero="rock" data-id="p5" data-nome="Anacrônico" data-preco="124.90">
+            <div class="capa-produto capa--rock">
+              <img src="./img/pitty.jpg">
+            </div>
+                <div class="info-produto">
+                  <span class="etiqueta genero">Rock Nacional</span>
+                  <h3>Anacrônico</h3>
+                  <p class="artista">Pitty</p>
+                    <div class="linha-preco"><span class="preco">R$ 124,90</span><button class="botao-add" aria-label="Adicionar Anacrônico ao carrinho">+</button></div>
+                </div>
+          </article>
+
+          <article class="cartao-produto revelar" data-genero="pop" data-id="p2" data-nome="Mayhem" data-preco="139.90">
+            <div class="capa-produto capa--pop">
+              <img src="./img/ladygaga.jpg">
+            </div>
+                <div class="info-produto">
+                  <span class="etiqueta genero">Pop</span>
+                  <h3>Mayhem</h3>
+                  <p class="artista">Lady Gaga</p>
+                    <div class="linha-preco"><span class="preco">R$ 139,90</span><button class="botao-add" aria-label="Adicionar Mayhem ao carrinho">+</button></div>
+                </div>
+          </article>
+
+          <article class="cartao-produto revelar" data-genero="eletronica" data-id="p6" data-nome="Discovery" data-preco="134.90">
+            <div class="capa-produto capa--eletronica">
+              <img src="./img/daftpunk.jpg">
+            </div>
+                  <div class="info-produto">
+                    <span class="etiqueta genero">Eletrônica</span>
+                    <h3>Discovery</h3>
+                    <p class="artista">Daft Punk</p>
+                      <div class="linha-preco"><span class="preco">R$ 134,90</span><button class="botao-add" aria-label="Adicionar Discovery ao carrinho">+</button></div>
+                  </div>
+          </article>
+
+          <article class="cartao-produto revelar" data-genero="indie" data-id="p1" data-nome="Whatever People Say I Am, That's What I'm Not" data-preco="129.90">
+              <div class="capa-produto capa--indie">
+                <img src="./img/arcticmonkeys.jpg">
+              </div>
+                  <div class="info-produto">
+                    <span class="etiqueta genero">Indie</span>
+                    <h3>Whatever People Say I Am, That's What I'm Not</h3>
+                    <p class="artista">Arctic Monkeys</p>
+                      <div class="linha-preco"><span class="preco">R$ 129,90</span><button class="botao-add" aria-label="Adicionar Whatever People Say I Am, That's What I'm Not ao carrinho">+</button></div>
+                  </div>
+          </article>
+
+          <article class="cartao-produto revelar" data-genero="samba" data-id="p6" data-nome="O Samba Não Tem Fronteiras" data-preco="134.90">
+            <div class="capa-produto capa--samba">
+              <img src="./img/spc.jpg">
+            </div>
+                  <div class="info-produto">
+                    <span class="etiqueta genero">Samba</span>
+                    <h3>O Samba Não Tem Fronteiras</h3>
+                    <p class="artista">Só Pra Contrariar</p>
+                      <div class="linha-preco"><span class="preco">R$ 134,90</span><button class="botao-add" aria-label="Adicionar O Samba Não Tem Fronteiras ao carrinho">+</button></div>
+                  </div>
+          </article>
+
+          <article class="cartao-produto revelar" data-genero="mpb" data-id="p6" data-nome="Caetano, Gal, Gil, Bethânia - Doces Bárbaros" data-preco="134.90">
+            <div class="capa-produto capa--mpb">
+              <img src="./img/caetbeth.jpg">
+            </div>
+                  <div class="info-produto">
+                    <span class="etiqueta genero">MPB</span>
+                    <h3>Caetano, Gal, Gil, Bethânia - Doces Bárbaros</h3>
+                    <p class="artista">Caetano, Gal, Bethânia</p>
+                      <div class="linha-preco"><span class="preco">R$ 134,90</span><button class="botao-add" aria-label="Adicionar Caetano, Gal, Gil, Bethânia - Doces Bárbaros ao carrinho">+</button></div>
+                  </div>
+          </article>
+
+          <article class="cartao-produto revelar" data-genero="pop" data-id="p6" data-nome="The Rise and Fall Of A Midwest Princess" data-preco="134.90">
+            <div class="capa-produto capa--pop">
+              <img src="./img/chappell.jpg">
+            </div>
+                  <div class="info-produto">
+                    <span class="etiqueta genero">Pop</span>
+                    <h3>The Rise and Fall Of A Midwest Princess</h3>
+                    <p class="artista">Chappell Roan</p>
+                      <div class="linha-preco"><span class="preco">R$ 134,90</span><button class="botao-add" aria-label="Adicionar The Rise and Fall Of A Midwest Princess ao carrinho">+</button></div>
+                  </div>
+          </article>
+
+          <article class="cartao-produto revelar" data-genero="jazz" data-id="p6" data-nome="My Favorite Things" data-preco="134.90">
+            <div class="capa-produto capa--jazz">
+              <img src="./img/johncoltrane.jpg">
+            </div>
+                  <div class="info-produto">
+                    <span class="etiqueta genero">Jazz</span>
+                    <h3>My Favorite Things</h3>
+                    <p class="artista">John Coltrane</p>
+                      <div class="linha-preco"><span class="preco">R$ 134,90</span><button class="botao-add" aria-label="Adicionar My Favorite Things ao carrinho">+</button></div>
+                  </div>
+          </article>
+
+          <article class="cartao-produto revelar" data-genero="pop" data-id="p6" data-nome="Debi Tirar Más Fotos" data-preco="134.90">
+            <div class="capa-produto capa--pop">
+              <img src="./img/badbunny.jpg">
+            </div>
+                  <div class="info-produto">
+                    <span class="etiqueta genero">Pop</span>
+                    <h3>Debi Tirar Más Fotos</h3>
+                    <p class="artista">Bad Bunny</p>
+                      <div class="linha-preco"><span class="preco">R$ 134,90</span><button class="botao-add" aria-label="Adicionar Debi Tirar Más Fotos ao carrinho">+</button></div>
+                  </div>
+          </article>
+
+          <article class="cartao-produto revelar" data-genero="rock" data-id="p6" data-nome="O Descobrimnto Do Brasil" data-preco="134.90">
+            <div class="capa-produto capa--rock">
+              <img src="./img/legiaourbana.jpg">
+            </div>
+                  <div class="info-produto">
+                    <span class="etiqueta genero">Rock Nacional</span>
+                    <h3>O Descobrimnto Do Brasil</h3>
+                    <p class="artista">Legião Urbana</p>
+                      <div class="linha-preco"><span class="preco">R$ 134,90</span><button class="botao-add" aria-label="Adicionar O Descobrimnto Do Brasil ao carrinho">+</button></div>
+                  </div>
+          </article>
+
+          <article class="cartao-produto revelar" data-genero="samba" data-id="p6" data-nome="Canta Sambas" data-preco="134.90">
+            <div class="capa-produto capa--samba">
+              <img src="./img/carmenm.jpg">
+            </div>
+                  <div class="info-produto">
+                    <span class="etiqueta genero">Samba</span>
+                    <h3>Canta Sambas</h3>
+                    <p class="artista">Carmen Miranda</p>
+                      <div class="linha-preco"><span class="preco">R$ 134,90</span><button class="botao-add" aria-label="Adicionar Canta Sambas ao carrinho">+</button></div>
+                  </div>
+          </article>
+
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <div class="grade-rodape">
+        <div>
+          <a href="index.html" class="marca" style="margin-bottom:14px;">
+            <img src="./img/cdlogo.png" alt="Imagem de um CD" width="30px">
+            Lojinha do Oliver
+          </a>
+          <p class="rodape-fontes">Loja virtual, criada como atividade MAPA da disciplina de Front-End.</p>
+        </div>
+        <div>
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Atendimento</h4>
+          <ul>
+            <li><a href="contato.html">Fale conosco</a></li>
+            <li><a href="sobre.html#faq">Perguntas frequentes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Onde estamos</h4>
+          <p>Telêmaco Borba, PR, Brasil</p>
+          <p>contato@lojinhadooliver.com.br</p>
+        </div>
+      </div>
+      <div class="rodape-base">
+        <span>© 2026 Lojinha do Oliver. Atividade MAPA para a disciplina de Front-End.</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+
+  <script src="./main.js"></script>
+</body>
+</html>

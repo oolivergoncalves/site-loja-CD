@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sobre a Lojinha do Oliver | Nossa história e perguntas frequentes</title>
+
+  <link rel="icon" type="image/png" href="img/favicon.png"> 
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <header class="topo">
+    <div class="container">
+      <a href="index.html" class="marca">
+        <img src="./img/cdlogo.png" alt="Imagem de um CD" width="30px">
+        Lojinha do Oliver
+      </a>
+
+      <nav class="nav-principal" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="sobre.html" aria-current="page">Sobre</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+
+      <div class="acoes-topo">
+        <a href="catalogo.html" class="botao-carrinho" aria-label="Ver carrinho de compras">
+          🛒 <span class="texto-carrinho">Carrinho</span>
+          <span class="contador-carrinho">0</span>
+        </a>
+        <button class="botao-menu-mobile" aria-label="Abrir menu de navegação" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="secao" style="padding-bottom: 40px;">
+      <div class="container">
+        <span class="etiqueta">Nossa história</span>
+        <h1 style="margin-block:10px 22px;">Começou numa feira de trocas e virou hábito de fim de semana</h1>
+        <p class="lead">A Lojinha do Oliver nasceu de uma coleção pessoal que não parava de crescer. Hoje, ainda escolhemos cada CD como se fosse pra nossa própria estante. </p>
+      </div>
+    </section>
+
+    <section class="secao secao--creme">
+      <div class="container">
+        <div class="cabecalho-secao revelar">
+          <div>
+            <span class="etiqueta">Linha do tempo</span>
+            <h2>Como chegamos até aqui</h2>
+          </div>
+        </div>
+
+        <div class="linha-tempo">
+          <div class="evento-tempo revelar">
+            <span class="ano">2000</span>
+              <div>
+                <h3>A feira de trocas</h3>
+                <p>Um estande de fim de semana em Telêmaco Borba, com 40 CDs usados e uma caixa de som emprestada.</p>
+              </div>
+          </div>
+          <div class="evento-tempo revelar">
+            <span class="ano">2001</span>
+              <div>
+                <h3>Primeira loja física</h3>
+                <p>A coleção passou de 40 para mais de 800 títulos, e o estande virou uma loja de 30m² no centro da cidade.</p>
+              </div>
+          </div>
+          <div class="evento-tempo revelar">
+            <span class="ano">2002</span>
+              <div>
+                <h3>Coleção por gênero</h3>
+                <p>Organizamos o catálogo em cinco frentes - rock, MPB, samba, jazz e eletrônica - para facilitar a descoberta.</p>
+              </div>
+          </div>
+          <div class="evento-tempo revelar">
+            <span class="ano">2010</span>
+              <div>
+                <h3>Lojinha do Oliver online</h3>
+                <p>Lançamento da loja virtual, levando CDs para todo o Brasil.</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="container" style="max-width: 820px;">
+        <div class="cabecalho-secao revelar">
+          <div>
+            <span class="etiqueta">O que nos guia</span>
+            <h2>Acreditamos que uma boa experiência vai além da compra.</h2>
+          </div>
+        </div>
+        <div class="grade-categorias">
+          <div class="cartao-categoria revelar">
+            <h3>Ouvimos antes de vender</h3>
+            <p>Todo CD é testado do início ao fim antes de entrar no catálogo.</p>
+          </div>
+          <div class="cartao-categoria revelar">
+            <h3>Preço justo, sempre visível</h3>
+            <p>Sem letras miúdas: o preço no site é o preço na embalagem.</p>
+          </div>
+          <div class="cartao-categoria revelar">
+            <h3>Embalagem que protege</h3>
+            <p>Reforço de papelão rígido em todo envio, testado para o transporte nacional.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!--Faq-->
+    <section class="secao secao--creme" id="faq">
+      <div class="container" style="max-width: 820px;">
+        <div class="cabecalho-secao revelar">
+          <div>
+            <span class="etiqueta">Dúvidas comuns</span>
+            <h2>Perguntas frequentes</h2>
+          </div>
+        </div>
+
+        <div class="revelar">
+          <div class="acordeao-item" data-aberto="true">
+            <button class="acordeao-pergunta" aria-expanded="true">
+              Quanto tempo leva para o CD chegar?
+              <span class="sinal">+</span>
+            </button>
+            <div class="acordeao-resposta" style="max-height: 200px;">
+              <p>Em média de 5 a 12 dias úteis, dependendo da região. Você recebe o código de rastreio assim que o pedido sai do nosso estoque.</p>
+            </div>
+          </div>
+
+          <div class="acordeao-item" data-aberto="false">
+            <button class="acordeao-pergunta" aria-expanded="false">
+              Os CDs são novos ou usados?
+              <span class="sinal">+</span>
+            </button>
+            <div class="acordeao-resposta">
+              <p>Trabalhamos com CDS oficiais novos e usados. Quando um item usado entra no catálogo, isso é informado claramente na descrição.</p>
+            </div>
+          </div>
+
+          <div class="acordeao-item" data-aberto="false">
+            <button class="acordeao-pergunta" aria-expanded="false">
+              Posso trocar um CD depois da compra?
+              <span class="sinal">+</span>
+            </button>
+            <div class="acordeao-resposta">
+              <p>Sim. Você tem até 7 dias corridos após o recebimento para solicitar troca ou devolução, desde que o CD não tenha sido reproduzido.</p>
+            </div>
+          </div>
+
+          <div class="acordeao-item" data-aberto="false">
+            <button class="acordeao-pergunta" aria-expanded="false">
+              Vocês vendem toca-cds e acessórios?
+              <span class="sinal">+</span>
+            </button>
+            <div class="acordeao-resposta">
+              <p>Ainda não, hoje o catálogo é 100% dedicado aos CDs. Equipamentos e acessórios estão nos planos para uma próxima fase da loja.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <div class="grade-rodape">
+        <div>
+          <a href="index.html" class="marca" style="margin-bottom:14px;">
+            <img src="./img/cdlogo.png" alt="Imagem de um CD" width="30px">
+            Lojinha do Oliver
+          </a>
+          <p class="rodape-fontes">Loja virtual, criada como atividade MAPA da disciplina de Front-End.</p>
+        </div>
+        <div>
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Atendimento</h4>
+          <ul>
+            <li><a href="contato.html">Fale conosco</a></li>
+            <li><a href="sobre.html#faq">Perguntas frequentes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Onde estamos</h4>
+          <p>Telêmaco Borba, PR, Brasil</p>
+          <p>contato@lojinhadooliver.com.br</p>
+        </div>
+      </div>
+      <div class="rodape-base">
+        <span>© 2026 Lojinha do Oliver. Atividade MAPA para a disciplina de Front-End.</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+
+  <script src="./main.js"></script>
+</body>
+</html>

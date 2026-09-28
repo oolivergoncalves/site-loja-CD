@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Lojinha do Oliver — Loja de CDs Originais </title>
+
+  <link rel="icon" type="image/png" href="img/favicon.png">  
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <header class="topo">
+    <div class="container">
+      <a href="index.html" class="marca">
+        <img src="./img/cdlogo.png" alt="Imagem de um CD" width="30px">
+        Lojinha do Oliver
+      </a>
+
+      <nav class="nav-principal" aria-label="Navegação principal">
+        <a href="index.html" aria-current="page">Início</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+
+      <div class="acoes-topo">
+          <a href="catalogo.html" class="botao-carrinho" aria-label="Ver carrinho de compras">
+            🛒 <span class="texto-carrinho">Carrinho</span>
+            <span class="contador-carrinho">0</span>
+          </a>
+            <button class="botao-menu-mobile" aria-label="Abrir menu de navegação" aria-expanded="false">
+              <span></span><span></span><span></span>
+            </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-texto">
+          <span class="etiqueta">Atuamos desde 2001</span>
+          <h1>CD é uma mídia física que também é objeto de afeto.</h1>
+          <p class="lead">Selecionamos os melhores do rock nacional, MPB, samba, jazz e os grandes clássicos internacionais.</p>
+          <div class="hero-acoes">
+            <a href="catalogo.html" class="botao botao--primario">Ver catálogo completo</a>
+            <a href="sobre.html" class="botao botao--secundario">Conhecer a loja</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="./img/cdlogo.png" alt="Imagem de um CD">
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="tarja-numeros revelar">
+          <div><strong>2.400+</strong><span>CDs catalogados</span></div>
+          <div><strong>5 gêneros</strong><span>em destaque na loja</span></div>
+          <div><strong>27 estados</strong><span>já receberam um pedido</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!--Categorias-->
+    <section class="secao">
+      <div class="container">
+        <div class="cabecalho-secao revelar">
+          <div>
+            <span class="etiqueta">Navegue por gênero</span>
+            <h2>Um estilo pra cada humor</h2>
+          </div>
+          <a href="catalogo.html" class="botao botao--secundario">Ver tudo</a>
+        </div>
+
+        <div class="grade-categorias">
+          <a href="catalogo.html#rock" class="cartao-categoria revelar">
+            <span class="numero">01</span>
+            <h3>Rock Nacional</h3>
+            <p>Da Vanguarda ao rock dos anos 2000.</p>
+          </a>
+          <a href="catalogo.html#mpb" class="cartao-categoria revelar">
+            <span class="numero">02</span>
+            <h3>MPB</h3>
+            <p>Clássicos e vozes contemporâneas da música popular brasileira.</p>
+          </a>
+          <a href="catalogo.html#samba" class="cartao-categoria revelar">
+            <span class="numero">03</span>
+            <h3>Samba</h3>
+            <p>Ritmos envolventes e clássicos que celebram a tradição e a alegria do samba.</p>
+          </a>
+          <a href="catalogo.html#jazz" class="cartao-categoria revelar">
+            <span class="numero">04</span>
+            <h3>Jazz</h3>
+            <p>Melodias sofisticadas, improvisos únicos e grandes clássicos do jazz mundial.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao--creme">
+      <div class="container">
+        <div class="cabecalho-secao revelar">
+          <div>
+            <span class="etiqueta">Seleção da semana</span>
+            <h2>Recém-chegados à loja</h2>
+          </div>
+          <a href="catalogo.html" class="botao botao--secundario">Ver catálogo completo</a>
+        </div>
+
+        <div class="grade-produtos">
+          <article class="cartao-produto revelar" data-id="p1" data-nome="Don't Smile At Me" data-preco="129.90">
+            <div class="capa-produto capa--rock">
+              <img src="./img/billie.jpg">
+            </div>
+                <div class="info-produto">
+                    <span class="etiqueta genero">Pop Alternativo</span>
+                    <h3>Don't Smile At Me</h3>
+                    <p class="artista">Billie Eilish</p>
+                      <div class="linha-preco">
+                        <span class="preco">R$ 129,90</span>
+                        <button class="botao-add" aria-label="Adicionar Don't Smile At Me ao carrinho">+</button>
+                      </div>
+                </div>
+          </article>
+
+          <article class="cartao-produto revelar" data-id="p2" data-nome="Let It Be" data-preco="139.90">
+            <div class="capa-produto capa--rock">
+              <img src="./img/beatles.jpg">
+            </div>
+                <div class="info-produto">
+                    <span class="etiqueta genero">Rock</span>
+                    <h3>Let It Be</h3>
+                    <p class="artista">Beatles</p>
+                      <div class="linha-preco">
+                        <span class="preco">R$ 139,90</span>
+                        <button class="botao-add" aria-label="Adicionar Let It Be ao carrinho">+</button>
+                      </div>
+                </div>
+          </article>
+
+          <article class="cartao-produto revelar" data-id="p3" data-nome="Terreiro Novo" data-preco="119.90">
+            <div class="capa-produto capa--samba">
+              <img src="./img/exaltasamba.jpg">
+            </div>
+              <div class="info-produto">
+                <span class="etiqueta genero">Samba</span>
+                <h3>Encanto</h3>
+                <p class="artista">Exaltasamba</p>
+                  <div class="linha-preco">
+                    <span class="preco">R$ 119,90</span>
+                    <button class="botao-add" aria-label="Adicionar Encanto ao carrinho">+</button>
+                  </div>
+              </div>
+          </article>
+
+          <article class="cartao-produto revelar" data-id="p4" data-nome="Wish" data-preco="159.90">
+            <div class="capa-produto capa--jazz">
+              <img src="./img/joshuaredman.jpg">
+            </div>
+            <div class="info-produto">
+              <span class="etiqueta genero">Jazz</span>
+              <h3>Wish</h3>
+              <p class="artista">Joshua Redman</p>
+              <div class="linha-preco">
+                <span class="preco">R$ 109,90</span>
+                <button class="botao-add" aria-label="Adicionar Wish ao carrinho">+</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+<!--Newsletter-->
+    <section class="secao secao--floresta">
+      <div class="container" style="text-align:center;">
+        <span class="etiqueta revelar">Newsletter</span>
+        <h2 class="revelar" style="margin-block:14px 10px;">CDs recomendados por semana, direto no seu e-mail</h2>
+        <p class="lead revelar" style="margin-inline:auto;">Cancele quando quiser.</p>
+        <form class="form-newsletter revelar" id="form-newsletter" style="max-width:420px; margin:24px auto 0;">
+          <label for="newsletter-email" class="campo" style="display:none;">E-mail</label>
+          <input type="email" id="newsletter-email" placeholder="seu@email.com" required>
+          <button type="submit" class="botao botao--primario">Inscrever</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+<!--Rodapé-->
+  <footer class="rodape">
+    <div class="container">
+      <div class="grade-rodape">
+        <div>
+          <a href="index.html" class="marca" style="margin-bottom:14px;">
+            <img src="./img/cdlogo.png" alt="Imagem de um CD" width="30px">
+            Lojinha do Oliver
+          </a>
+          <p class="rodape-fontes">Loja virtual, criada como atividade MAPA da disciplina de Front-End.</p>
+        </div>
+        <div>
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Atendimento</h4>
+          <ul>
+            <li><a href="contato.html">Fale conosco</a></li>
+            <li><a href="sobre.html#faq">Perguntas frequentes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Onde estamos</h4>
+          <p>Telêmaco Borba, PR, Brasil</p>
+          <p>contato@lojinhadooliver.com.br</p>
+        </div>
+      </div>
+
+      <div class="rodape-base">
+        <span>© 2026 Lojinha do Oliver. Atividade MAPA para a disciplina de Front-End.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./main.js"></script>
+</body>
+</html>
